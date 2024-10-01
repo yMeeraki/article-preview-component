@@ -16,6 +16,8 @@ body{
     background-color:  hsl(210, 46%, 95%);
 }
 
+
+
 /*Styling of Card*/
 .card{
     display: flex;
@@ -52,6 +54,28 @@ body{
 }
 
 
+@media (max-width: 768px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+        gap:1rem;
+        padding: 0px;
+        
+    }
+
+    .card-img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-content{
+        padding: 20px;
+    }
+}
+
 /*Styling of Avatar footer*/
 .footer{
     display: flex;
@@ -71,6 +95,20 @@ body{
 .avatar-michelle{
     width: 15%;
     border-radius: 50%;
+}
+
+.share{
+    background-color:  hsl(210, 46%, 95%);
+    padding: 0px 10px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.share:hover{
+    fill:#6E8098;
 }
 
 /*---------------------*/
