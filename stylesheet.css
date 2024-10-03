@@ -111,17 +111,19 @@ body{
 
 
 .share-options{
-  display: flex;
+  display: none;
   background-color: hsl(217, 19%, 35%);
   
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px;
-  gap:.5rem;
+  gap:1rem;
   align-items: center;
 
   position: absolute;
 
-  right: 16.5rem; /* Adjust position to appear near the share button */
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  right: 16rem; /* Adjust position to appear near the share button */
   bottom: 20rem; /* Adjust distance from the share button */
 }
 
@@ -129,7 +131,9 @@ body{
   content: "";
   position: absolute;
   bottom: -10px;
-  right:calc(50% - 10px);
+  right:calc(50% - 20px);
+
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
