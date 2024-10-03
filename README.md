@@ -6,7 +6,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,9 +13,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,83 +25,81 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- **Semantic HTML5 markup** - The structure of the page is defined using clean, semantic HTML elements like `<h2>`, `<p>`, `<div>`, etc.
+- **CSS custom properties** - Reusable CSS properties for colors, like `hsl(210, 46%, 95%)`, are used to maintain design consistency.
+- **Flexbox** - Used for layout, aligning content like the avatar, social share buttons, and the card.
+- **Mobile-first workflow** - Media queries are used to make the design responsive, adjusting the layout for smaller screens.
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I worked on creating a social media share feature that appears when the user clicks the share button. One of the key learnings for me was how to add a custom arrow to a tooltip-like element using CSS `::before`. This technique allows the share options to appear like a pop-up, with a small arrow pointing to the button that triggered it.
 
-To see how you can add code snippets, see below:
+Here’s the part of the CSS code I’m particularly proud of:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.share-options::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: calc(50% - 20px);
+  
+  /* Adding shadow for a more elevated effect */
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Creating the arrow effect */
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+This code was challenging but fun to implement because I learned how to align and style the arrow so that it looks like a natural extension of the share options box. The use of ::before allowed me to create a clean arrow effect without needing extra HTML elements, keeping the markup lean and efficient.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also worked on positioning this tooltip dynamically using position: absolute and fine-tuned it using calc() for better responsiveness.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to focus on the following areas to enhance my skills and improve my overall development workflow:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+1. **JavaScript DOM Manipulation**:
+   - While I successfully implemented a toggle feature for the share options, I want to delve deeper into more complex DOM manipulations. Understanding concepts like event delegation and optimization of rendering performance will help me create smoother user experiences.
 
-### Useful resources
+2. **Responsive Design**:
+   - Although I used media queries effectively, I aim to refine my skills in creating truly responsive layouts. Learning more about CSS Grid and Flexbox will help me build layouts that adapt seamlessly across different devices.
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+3. **Accessibility (a11y)**:
+   - I want to prioritize accessibility in my projects. This includes using semantic HTML, ARIA roles, and ensuring that all interactive elements are keyboard navigable. Understanding best practices will make my applications more usable for everyone.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+4. **CSS Preprocessors**:
+   - Exploring CSS preprocessors like SASS or LESS could streamline my styles and help manage large stylesheets. Learning how to utilize variables, nesting, and mixins will allow for more organized and maintainable code.
+
+5. **JavaScript Frameworks**:
+   - I'm interested in deepening my knowledge of frameworks like React and Next.js. I want to focus on state management, component lifecycles, and building reusable components to enhance the functionality of my applications.
+
+6. **Version Control with Git**:
+   - Gaining more experience with Git, especially in collaborative environments, will be beneficial. I want to become comfortable with branching, merging, and resolving conflicts effectively.
+
+By focusing on these areas, I hope to create more robust, accessible, and user-friendly web applications in my future projects.
+
+
+### Useful Resources
+
+- [Scrimba - Learn JavaScript](https://v2.scrimba.com/learn-javascript-c0) - This platform helped me reinforce my understanding of JavaScript fundamentals through interactive coding exercises. I found the hands-on approach very effective for learning.
+
+- [freeCodeCamp - Learn Form Validation by Building a Calorie Counter](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-form-validation-by-building-a-calorie-counter/step-10) - This article was instrumental in teaching me form validation techniques. The practical examples were particularly helpful for applying the concepts in real-world scenarios.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@yMeeraki](https://www.frontendmentor.io/profile/yMeeraki)
