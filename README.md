@@ -23,14 +23,10 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
 
-### Screenshot
-
-
-
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/share-options-popup-with-css-flexbox-and-vanilla-javascript-ULSiHJpvCO)
+- Live Site URL: [Netlify](https://apc-fem.netlify.app/)
 
 ## My process
 
